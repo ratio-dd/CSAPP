@@ -13,8 +13,12 @@ long converFromDecimalToBinary(int decimal) {
     return binary;
 }
 int main(int argc, char const *argv[]) {
-    int x = 148;
-
-    printf("%d", converFromDecimalToBinary(x));
+    int x = 0b01100010;
+    long y = x<<3;
+    long z = x%8;
+    printf("%d\n%d\n%d", 
+        converFromDecimalToBinary(x),
+        converFromDecimalToBinary(y),
+        converFromDecimalToBinary(z));
     return 0;
 }
