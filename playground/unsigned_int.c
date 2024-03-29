@@ -16,7 +16,7 @@ int main() {
     // unsigned
     unsigned u = -2147483648;
 
-    printf("t = %d, = %u.\n",t,t);
-    printf("u = %d, = %u.\n",u,u);
-    printf("%d,%u",abs(u));
+    printf("signed:    t = %d, = %u.\n",t,t);
+    printf("unsigned:  u = %d, = %u.\n",u,u);
+    printf("abs:\t%d,%u",abs(u));
 }
